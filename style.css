@@ -10,7 +10,6 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-    hyphens: manual;
 }
 
 
@@ -278,8 +277,8 @@ img {
     }
 
     #heading {
-        font-size: 393%;
-        margin-bottom: -6.4%;
+        font-size: 400%;
+        margin-bottom: -5%;
         margin-left: 20%;
         margin-right: 20%;
 
