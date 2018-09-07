@@ -1,0 +1,406 @@
+/* Generelt */
+
+body {
+    font-family: "Courier New";
+    background-color: #d2d2d2;
+    margin-bottom: 2%;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    hyphens: manual;
+}
+
+
+/*
+.quote-1 {
+    color: #cc9933;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+*/
+
+/* Heading */
+
+#video {
+    position: relative;
+}
+
+#koncertVideo {
+    width: 100%;
+}
+
+#heading {
+    font-size: 30px;
+    position: absolute;
+    color: #d2d2d2;
+    bottom: -55px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+h2 {
+    font-size: 33px;
+    text-align: center;
+    margin-top: -5px;
+    color: black;
+    margin-bottom: -1px;
+
+}
+
+/* Overskrift styling */
+
+.overskrift {
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: -50px;
+}
+
+h3 {
+    position: relative;
+    font-size: 23px;
+    margin: 12%;
+    margin-top: -5%;
+    z-index: 1;
+}
+
+.graa-blok {
+    background-color: #7e7c7d;
+    width: 65%;
+    height: 25px;
+    position: relative;
+    top: -55px;
+    margin-left: 30%;
+}
+
+.orange-trekant {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 0px solid;
+    border-left: 45px solid #cc9933;
+    border-bottom: 45px solid transparent;
+    margin-left: 5%;
+
+}
+
+/*
+.orange-blok {
+    background-color: #e1a447;
+    width: 65%;
+    height: 25px;
+    z-index: -1;
+    position: relative;
+    top: -30px;
+    margin-left: 20%;
+    opacity: 50%;
+}
+
+*/
+
+/* content*/
+
+#introVideo {
+    width: 100%;
+    border-style: solid;
+    border-color: #cc9933;
+}
+
+/*
+#video2 {
+    border-style: solid;
+    border-bottom-color: rgba(255, 102, 51, 0.7);
+    border-right-color: rgba(255, 102, 51, 0.7);
+    border-bottom-width: 7px;
+    border-right-color: 7px;
+}
+*/
+
+img {
+    width: 100%;
+    position: relative;
+    border: #cc9933;
+    border-style: solid;
+}
+
+.article-2-white {
+    background-color: whitesmoke;
+}
+
+.article-4-white {
+    background-color: whitesmoke;
+    padding-bottom: 1%;
+    z-index: -1;
+}
+
+
+.billede-med-lyd {
+    position: relative;
+}
+
+.billede-med-lyd p {
+    font-size: 80%;
+    text-align: center;
+    color: #cc9933;
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 25%;
+
+}
+
+/* speaker og animation */
+
+.speaker {
+    width: 8%;
+    border-style: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 36%;
+    left: 46.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation: speaker 1.5s infinite;
+}
+
+@keyframes speaker {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+.bil-article-2 {
+    position: relative;
+}
+
+.billede-tvivl {
+    position: relative;
+}
+
+.citat {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.citat p {
+    margin-left: 20%;
+    margin-right: 12%;
+}
+
+.gul-citat {
+    position: absolute;
+    background-color: #cc9933;
+    width: 230px;
+    height: 120px;
+    margin-left: 10%;
+    margin-top: -32%;
+    z-index: -1;
+}
+
+/*
+.text-box-tvivl {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 50%;
+    padding: 5px;
+    background: rgba(204, 153, 51, 0.7)
+}
+
+.text-tvivl {
+    margin: 5%;
+    font-weight: inherit;
+    font-size: 12px;
+}
+*/
+/*
+.article-2-white {
+    background-color: whitesmoke;
+    overflow: hidden;
+    z-index: -2;
+}
+*/
+
+/* Social medie henvisning */
+
+.socialemedier {
+    text-align: center;
+
+}
+
+.sociale img {
+    width: 50%;
+    border-style: hidden;
+}
+
+.sociale a {
+    margin-right: -10%;
+
+}
+
+.sociale {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+    margin-left: 9%;
+}
+
+
+/*PC*/
+
+@media (min-width:1025px) {
+
+    p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    /* heading */
+
+    #video {
+        height: 540px;
+        overflow: hidden;
+    }
+
+    #heading {
+        font-size: 393%;
+        margin-bottom: -6.4%;
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+
+    h2 {
+        font-size: 450%;
+    }
+
+    /* Overskrift */
+
+    .overskrift {
+        margin-top: 50px;
+    }
+
+    h3 {
+        font-size: 45px;
+        padding-top: 20px;
+        margin-left: 23%;
+        margin-right: 20%;
+        margin-bottom: 2%;
+    }
+
+    .graa-blok {
+        width: 50%;
+        height: 40px;
+        position: relative;
+        top: -45px;
+    }
+
+    .orange-trekant {
+        border-top: 0px solid;
+        border-left: 60px solid #cc9933;
+        border-bottom: 60px solid transparent;
+        margin-left: 20%;
+    }
+
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    /* content */
+
+    #introVideo {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .bil-article-2 {
+        width: 100%;
+    }
+
+    .billede-med-lyd p {
+        font-size: 60%;
+        text-align: center;
+        width: 8%;
+        top: 37%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .speaker {
+        width: 4%;
+        top: 43.5%;
+        left: 47.8%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .text-box-tvivl {
+        margin-left: 20%;
+        width: 300px;
+    }
+
+    .text-tvivl {
+        font-size: 28px;
+    }
+
+    #den-nye-lyd {
+        margin-left: 36%;
+    }
+
+    .citat {
+        margin-bottom: 50px;
+    }
+
+    .citat p {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .gul-citat {
+        position: absolute;
+        background-color: #cc9933;
+        width: 490px;
+        height: 70px;
+        margin-left: 33%;
+        margin-top: -6%;
+        z-index: -1;
+    }
+
+    .socialemedier {
+        font-size: 25px;
+    }
+
+
+    .sociale img {
+        width: 20%;
+    }
+
+    .sociale {
+        margin-right: 16.5%;
+    }
+}
+
